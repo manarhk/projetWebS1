@@ -1,0 +1,336 @@
+body, html{
+	top: 5px;
+	margin: 0;
+	padding: 0;
+
+}
+header{
+	height: 100%;
+	width: 100%;
+}
+
+.container{
+height: 100%;
+width: 100%;
+}
+
+.menu ul
+{
+	display: inline-flex;
+}
+
+.menu ul li
+{
+	display: grid;
+	grid-template-columns: 3fr 4fr 0fr ; 
+	text-decoration:none; 
+}
+
+.logo img{
+height: 100px;
+width: 200PX;
+margin-top: -12px;
+}
+
+#search{
+padding: 5px;
+border: 3px solid grey;
+border-radius: 40px;
+outline: none;
+padding-left: 20px;
+background: url('./images/search.png')right no-repeat;
+
+
+}
+.description{
+
+	text-decoration: none;
+	color: black;
+	}
+
+.serviceclients{
+height: 30px;
+width: 30px;
+margin-right: 5px;
+
+}
+
+	
+.panier , .favoris, .compte{
+width: 30px;
+height: 25px;
+margin-left: 1em;
+}
+
+
+.navbar ul{
+display: flex;
+  margin:0;
+ padding:0;
+text-align: center;
+z-index: 1;
+flex-direction: row;
+
+
+}
+.navbar li{
+	margin: auto;
+	background-color: grey;
+	padding: 0;
+
+}
+.navbar li a {
+ text-decoration: none;
+ color: black;
+ display: block;
+ width: 100%;
+ padding: 5px;
+ }
+ .navbar li a:hover {
+ color:#A52A2A;
+ }
+
+
+ .navbar ul li ul{
+ 	display: none;
+ }
+ .navbar ul li:hover ul {
+ 	display: block;
+ }
+.navbar li:hover ul li{
+	float: none;
+}
+.navbar li ul {
+
+	position: absolute;
+}
+.navbar{
+	background-color: black;
+
+}
+.promos{
+	color: #FF0000 !important ;
+
+}
+/*
+.recherchetof {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+
+.prix_ini, .titre, .prix_apres{
+	margin: 5px;
+	margin-left: 1.5em;
+
+}
+*/
+ .prix_ini {
+	text-decoration: line-through red;
+
+}
+.prix_apres{
+	color: grey;
+	font-size: 20px;
+}
+
+
+
+
+.size, .color {
+	margin-left: 0.5em;
+}
+
+
+
+
+
+
+.descrp_prix{
+margin-left: 2px;
+
+}
+.titre , .prix_avant , .prix_apres{
+	margin-left: 0.5em;
+
+}
+
+
+.red{
+	background-color: red;
+	padding-top: 2px;
+	height: 20px;
+	width: 20px;
+	margin: 5px;
+	cursor: pointer;
+
+}
+.black{
+	background-color: black;
+	padding-top: 2px;
+	height: 20px;
+	width: 20px;
+	margin: 5px;
+	cursor: pointer;
+}
+.blue{
+	background-color: blue;
+	padding-top: 2px;
+	height: 20px;
+	width: 20px;
+	margin: 5px;
+	cursor: pointer;
+}
+.pink{
+	background-color: pink;
+	padding-top: 2px;
+	height: 20px;
+	width: 20px;
+	margin: 5px;
+	cursor: pointer;
+}
+.white{
+	background-color: white;
+	padding-top: 2px;
+	height: 20px;
+	width: 20px;
+	margin: 5px;
+	cursor: pointer;
+}
+
+.brown{
+	background-color: brown;
+	padding-top: 2px;
+	height: 20px;
+	width: 20px;
+	margin: 5px;
+	cursor: pointer;
+}
+.yellow{
+	background-color: yellow;
+	padding-top: 2px;
+	height: 20px;
+	width: 20px;
+	margin: 5px;
+	cursor: pointer;
+}
+.green{
+	background-color: green;
+	padding-top: 2px;
+	height: 20px;
+	width: 20px;
+	margin: 5px;
+	cursor: pointer;
+}
+
+.grey{
+	background-color: grey;
+	padding-top: 2px;
+	height: 20px;
+	width: 20px;
+	margin: 5px;
+	cursor: pointer;
+}
+
+
+
+
+.photosrecherche {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.photo img{
+
+	width:300px;
+	height: 400px;
+    padding:20px ;
+    cursor: pointer;
+}
+
+
+.size_fnl{
+	padding-top: 5em;
+}
+
+footer {
+	border: 3.5px solid #DCDCDC ;
+	border-bottom: none;
+	border-left: none;
+	border-right: none;
+	padding-top: 1em;
+	background-color: #A9A9A9;
+	
+}
+h3{
+	text-decoration: none;
+	color: #696969;
+
+
+}
+.footer{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	text-decoration: none;
+
+
+}
+
+.ftr{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	text-decoration: none;
+	color: black;
+	text-align: center;
+	cursor: pointer;
+	line-height: 1.5em;
+
+}
+
+
+.ftr:hover{
+	
+	font-size: x-large;
+	color: #DC143C;
+	
+}
+.fr{
+width: 20px;
+height: 20px;
+}
+
+.paiement{
+	border-top: 3.5px solid #DCDCDC;
+	
+}
+
+
+.paiement img , .suivre img {
+	width: 40px;
+	padding-top: 1em;
+	margin-left: 1em;
+}
+
+
+.paiement , .suivre{
+	padding-top: 5em;
+	margin-top: 50px;
+	padding-left: 9%;
+	display: flex;
+	margin: 12px;
+	color: black;
+
+
+}
+.paiement p , .suivre p{
+	margin-right: 10%;
+
+}
+
+

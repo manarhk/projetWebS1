@@ -1,0 +1,16 @@
+(function(){
+  window['optimizely'] = window['optimizely'] || [];
+  window['optimizely'].push(['activateGeoDelayedExperiments', {
+    'location':{
+      'city': "MARSEILLE",
+      'continent': "EU",
+      'country': "FR",
+      'region': "PAC"
+    },
+    'ip':"176.147.70.195"
+  }]);
+})
+//
+()
+
+;

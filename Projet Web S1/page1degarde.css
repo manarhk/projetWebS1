@@ -1,0 +1,348 @@
+/* le valideur m'a indiqué trois fautes mais j'ai cherché d'où elle viennent  j'ai demandé  mais je sais pas*/
+
+body,html{
+	top: 5px;
+	margin: 0;
+	padding: 0;
+
+}
+
+/* partie header*/
+header{
+	height: 100%;
+	width: 100%;
+
+}
+.container{
+height: 100%;
+width: 100%;
+}
+
+.menu ul
+{
+	display: inline-flex;
+}
+
+.menu ul li
+{
+	display: grid;
+	grid-template-columns: 3fr 4fr 0fr ; 
+	text-decoration:none; 
+}
+
+.logo img{
+height: 100px;
+width: 200PX;
+margin-top: -12px;
+}
+/* la barre de recherche*/
+#search{
+padding: 5px;
+border: 3px solid grey;
+border-radius: 40px;
+outline: none;
+padding-left: 20px;
+background: url('./images/search.png')right no-repeat;
+
+
+}
+.description{
+
+	text-decoration: none;
+	color: black;
+	}
+
+.serviceclients{
+height: 30px;
+width: 30px;
+margin-right: 5px;
+
+}
+
+	
+.panier , .favoris, .compte{
+width: 30px;
+height: 25px;
+margin-left: 1em;
+}
+
+
+
+.navbar ul{
+display: flex;
+  margin:0;
+ padding:0;
+text-align: center;
+z-index: 1;
+flex-direction: row;
+
+
+}
+.navbar li{
+	margin: auto;
+	background-color: grey;
+	padding: 0;
+
+}
+.navbar li a {
+ text-decoration: none;
+ color: black;
+ display: block;
+ width: 100%;
+ padding: 5px;
+ }
+ /*:hover permet de spécifier l'apparence d'un élément au moment où l'utilisateur le survole avec le pointeur, sans nécessairement
+  l'activer.*/
+ .navbar li a:hover {
+ color:#A52A2A;
+ }
+
+
+ .navbar ul li ul{
+ 	display: none;
+ }
+ .navbar ul li:hover ul {
+ 	display: block;
+ }
+.navbar li:hover ul li{
+	float: none;
+}
+.navbar li ul {
+
+	position: absolute;
+}
+.navbar{
+	background-color: black;
+	width: 100%;
+	
+
+}
+.promos{
+	color: #FF0000 !important ;
+
+}
+
+
+.ouverture img {
+    width: 100%;
+    height: 100%;
+
+}
+.img2{
+	padding-top: 5px;
+}
+
+/* le main */
+
+.slide img {
+    width: 100%;
+    height: 100%;
+}
+/* le css pour les 3 slides*/
+.slides {
+	
+    padding: 4em;
+    width: 80%;
+    height: 420px;
+    display: block;
+   
+    position: relative;
+}
+
+
+.slides input { display: none; }
+
+.slide-container { display: block; }
+
+.slide {
+    top: 0;
+    opacity: 0;
+    width: 100%;
+    height: 520px; 
+    display: block;
+    position: absolute;
+
+    transform: scale(0);
+
+    transition: all .7s ease-in-out;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+}
+
+.navigation label {
+    width: 60px;
+    height: 60%;
+    display: none;
+    position: absolute;
+/* z-index définit le « z-order » (NdT : « ordre z » n'est pas usité. Généralement, un élément couvrira un autre élément si 
+sa valeur de  z-index est supérieure à celle du deuxième élément.*/
+    z-index: 3;
+    cursor: pointer;
+
+    transition: opacity 2s;
+
+    color: #fff;
+    font-size: 160pt;
+    text-align: center;
+      
+}
+
+.slide:hover + .navigation label { opacity: 0.5; }
+
+.navigation label:hover { opacity: 1; }
+
+.navigation .next { right: 0; }
+
+input:checked + .slide-container  .slide {
+    opacity: 1;
+
+    transform: scale(1);
+
+    transition: opacity 1.5s ease-in-out;
+}
+
+input:checked + .slide-container .navigation label { display: block; }
+
+.navigation-dots {
+    width: 100%;
+    bottom: 12px;
+    height: 14px;
+    display: block;
+    position: absolute;
+    text-align: center;
+}
+
+.navigation-dots .navigation-dot {
+    top: 3px;
+    width: 12px;
+    height: 12px;
+    margin: 0 5px;
+    position: relative;
+    border-radius: 100%;
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.4);
+    
+}
+
+.navigation-dots .navigation-dot:hover {
+    cursor: pointer;
+	background-color: rgba(0, 0, 0, 1);
+	
+}
+
+.livraison {
+	padding-top: 5em;
+	text-align: center;
+	padding-bottom: 3em;
+
+	
+}
+.livrasion img{
+	height: 100%;
+	width: 100%;
+}
+
+/* partie 'footer'*/
+footer {
+	border: 3.5px solid #DCDCDC ;
+	border-bottom: none;
+	border-left: none;
+	border-right: none;
+	padding-top: 1em;
+	background-color: #A9A9A9;
+	
+}
+h3{
+	text-decoration: none;
+	color: #696969;
+
+
+}
+.footer{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	text-decoration: none;
+
+
+}
+
+.ftr{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	text-decoration: none;
+	color: black;
+	text-align: center;
+	cursor: pointer;
+	line-height: 1.5em;
+
+}
+
+
+.ftr:hover{
+	
+	font-size: x-large;
+	color: #DC143C;
+	
+}
+.fr{
+width: 20px;
+height: 20px;
+}
+
+.paiement{
+	border-top: 3.5px solid #DCDCDC;
+	
+}
+
+
+.paiement img , .suivre img {
+	width: 40px;
+	padding-top: 1em;
+	margin-left: 1em;
+}
+
+
+.paiement , .suivre{
+	padding-top: 5em;
+	margin-top: 50px;
+	padding-left: 9%;
+	display: flex;
+	margin: 12px;
+	color: black;
+
+
+}
+.paiement p , .suivre p{
+	margin-right: 10%;
+
+}
+
+
+           /* en mode responsive*/
+
+@media screen and (max-width: 288px){
+	p{
+		font-size: 1.5rem;
+		line-height: 1.5;
+		
+	}
+	div{
+		flex-wrap: wrap;
+	}
+}
+
+@media screen and (max-width: 513px){
+	p{
+		font-size: 5rem;
+		line-height: 1.5;
+	}
+	div{
+		flex-wrap: wrap;
+	}
+}
+
